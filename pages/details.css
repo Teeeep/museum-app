@@ -1,0 +1,46 @@
+body {
+    background-color: #FFBA00;
+    font-family: 'Inconsolata', monospace; 
+    text-align: center;
+}
+
+  #content {
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 2rem 0;
+      
+  }
+
+  #comments {
+    display: block;
+    border: 1px solid;
+    width: 50%;
+    border-radius: 5px;
+    margin: 0 auto;
+
+  }
+
+  img {
+    max-width: 30vw;
+  }
+
+  form {
+    display: flex;
+    border-radius: 5px;
+    max-width: 50%;
+    margin: 2rem auto;
+    width: 50%;
+    border: 1px solid;
+    border-radius: 5px;
+    flex-direction: column;
+  }
+
+  main {  
+    background: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2rem 0;
+
+  }
