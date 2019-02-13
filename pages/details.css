@@ -28,9 +28,11 @@ body {
   form {
     display: flex;
     max-width: 50%;
-    margin: auto;
+    margin: 2em auto;
     border: 1px solid;
     flex-direction: column;
+    border-radius: 5px;
+    
   }
 
   main {  
