@@ -1,8 +1,5 @@
 function capitalizeFirstChar(name) {
-
-    
     let firstLetter = name.charAt(0).toUpperCase() 
-    console.log(firstLetter)
     return firstLetter + name.slice(1)
 }
 
