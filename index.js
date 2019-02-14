@@ -1,3 +1,4 @@
+
 const data = {
     elapsedMilliseconds: 0,
     count: 359,
@@ -323,3 +324,36 @@ const data = {
         }
     ]
 }
+
+
+function displayArtWork(artwork){
+    console.log(artwork.webImage.url)
+
+    // create elements
+    const paintingLink = document.createElement('a')
+    const paintingImg = document.createElement('img')
+    const section = document.getElementById('gallery')
+
+    // add attributes to new elements
+    paintingLink.setAttribute('href', './pages/detail-page.html')
+    paintingImg.setAttribute('src', artwork.webImage.url)
+    paintingImg.setAttribute('alt', artwork.title)
+    console.log(paintingLink)
+    console.log(paintingImg)
+
+
+    // display elements
+
+    section.appendChild(paintingLink).appendChild(paintingImg)
+}
+
+
+function displayPaintings() {
+    const paintings = data.artObjects
+    for (let i = 0; i < data.artObjects.length; i++) {
+        const currentPainting = paintings[i]
+        displayArtWork(currentPainting)
+    }
+}
+
+displayPaintings()
