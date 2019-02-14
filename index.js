@@ -1,3 +1,4 @@
+const MIN_PAINTING_WIDTH = 2000
 
 const data = {
     elapsedMilliseconds: 0,
@@ -352,7 +353,15 @@ function displayPaintings() {
     const paintings = data.artObjects
     for (let i = 0; i < data.artObjects.length; i++) {
         const currentPainting = paintings[i]
-        displayArtWork(currentPainting)
+        console.log(data.artObjects[i].webImage.width)
+        console.log(data.artObjects[i].principalOrFirstMaker)
+        if (data.artObjects[i].webImage.width > MIN_PAINTING_WIDTH)
+         if(data.artObjects[i].principalOrFirstMaker !== 'Gerard van Honthorst')
+            if(data.artObjects[i].longTitle.contains()) {
+          displayArtWork(currentPainting)
+    
+            
+        }
     }
 }
 
